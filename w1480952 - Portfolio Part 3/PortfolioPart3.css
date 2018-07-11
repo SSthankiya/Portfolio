@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	margin: 0;
+	padding: 0;
+	background: #eee9df url(../images/tile1.png) center top repeat;
+}
+body {
+	width: 940px;
+	margin: 0 auto;
+	font: 10pt/1.5em Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header, article, footer {
+	display: block;
+}
+h1 {
+	font-size: 32px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #2980B9;
+	padding-top: 5px;
+}
+h2 {
+	color: #E67E22;
+	text-align: center;
+}
+h3 {
+	color: #E67E22;
+}
+li {
+	color: #2980B9;
+	font-weight:bold;
+}
+p {
+	text-align: justify;
+	word-spacing: inherit;
+}
+footer {
+	clear: both;
+	text-align: center;
+	width: 940px;
+	height: 100px;
+	padding: 20px;
+	color: #FFA500;
+	border-radius: 15px 50px;
+}
+.gradient {
+	background: -webkit-linear-gradient(#2980B9, lightblue); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2980B9, lightblue); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2980B9, lightblue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2980B9, lightblue); /* Standard syntax */
+}
+.toggler {
+	width: 500px;
+	height: 200px;
+}
+#button {
+	padding: .5em 1em;
+	text-decoration: none;
+}
+#effect {
+	position: relative;
+	width: 240px;
+	height: 135px;
+	padding: 0.4em;
+}
+#effect h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+}

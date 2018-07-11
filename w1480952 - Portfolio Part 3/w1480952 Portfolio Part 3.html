@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+  <title>w1480952 Portfolio Part 3 - Course Advert</title>
+  <link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link href="PortfolioPart3.css" rel="stylesheet"/>
+  <script>
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+
+	$(function() {
+		$( "#accordion" ).accordion({
+			collapsible: true
+		});
+	});
+
+  $(function() {
+
+    function runEffect() {
+
+      var selectedEffect = $( "#effectTypes" ).val();
+ 
+
+      var options = {};
+
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 0 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+
+      $( "#effect" ).toggle( selectedEffect, options, 500 );
+    };
+
+   $( "#button" ).click(function() {
+      runEffect();
+    });
+  });
+  </script>
+  </head>
+  <body>
+<header>
+    <h1>BSc Hons Computer Science</h1>
+  </header>
+<article>
+<h2>All About BSc Hons Computer Science</h2>
+<div id= "accordion">
+    <h3>Name of Course</h3>
+    <div>
+    <p>BSc Hons Computer Science with Optional Sandwich Year</p>
+  </div>
+    <h3>Description of Computer Science:</h3>
+    <div>
+    <p>With this Computer Science degree, students will have the capability in gaining a wide variety of comuting skills alongside knowleadge in which it will be shaping up their futures as Computer Scientists. This course is mainly based on Computer Science, Software Engineering and Development along with exploring a range of computer specialised topic during the courses.</p>
+    <p>Additionally, the aspect of this course is that it is completely flexibility course in which the students have the ability to build a customised route with BSc Hons Computer Science. Students are able to follow several remmonded pathways that wil be suiting the sudents interests. Here are the pathways that students could follow: creative computing, information systems, graphics and games development, mobile and web computing, software engineering, design and development, and software security.</p>
+  </div>
+  </div>
+<p></p>
+<p></p>
+<p></p>
+<div class="toggler">
+    <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 class="ui-widget-header ui-corner-all">Toggle the Image</h3>
+    <p><img src="Images/Untitled-2.jpg" width="240" height="90"/></p>
+  </div>
+  </div>
+<select name="effects" id="effectTypes">
+    <option value="blind">Blind</option>
+    <option value="bounce">Bounce</option>
+    <option value="clip">Clip</option>
+    <option value="drop">Drop</option>
+    <option value="explode">Explode</option>
+    <option value="fold">Fold</option>
+    <option value="highlight">Highlight</option>
+    <option value="puff">Puff</option>
+    <option value="pulsate">Pulsate</option>
+    <option value="scale">Scale</option>
+    <option value="shake">Shake</option>
+    <option value="size">Size</option>
+    <option value="slide">Slide</option>
+  </select>
+<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+<h3>All Modules in Computer Science</h3>
+<div id="tabs">
+<ul>
+    <li><a href="#tabs-1">First Year (Level 4)</a></li>
+    <li><a href="#tabs-2">Second Year (Level 5)</a></li>
+    <li><a href="#tabs-3">Placement Year</a></li>
+    <li><a href="#tabs-4">Final Year (Level 6)</a></li>
+  </ul>
+<div id="tabs-1">
+    <h3>First Semestar</h3>
+    <ul>
+    <li>Computer System Fundamentals</li>
+    <p>This module is centred on the fundamental aspects of the way that a typical computer functions either as a standalone entity or as part of a computer network. Discussion of the main hardware components of a computer system provides the backdrop to introduce the Von Neumann fetch–decode–execute cycle as well as the way in which data and information are stored in the computer. Progressing from the hardware level, students learn about the lowest programming level that humans can understand in the form of assembly programming.</p>
+    <li>Mathematics for Computing</li>
+    <p>This module introduces elements of discrete and analytical mathematics for computing students. Topics include numeric systems, sets, relations, functions, introduction to logic and proof, Boolean algebra, matrices and vectors.</p>
+    <li>Software Development Principles 1</li>
+    <p>An introduction to Computer Programming with a strongly-typed language. The module concentrates on teaching the fundamentals of programming by considering numerous algorithms and code examples involving sequence, selection, and iteration.  Various solutions will be designed and implemented to provide practical experience and feedback. The use of windows objects and event handling will also be covered.</p>
+  </ul>
+    <h3>Second Semestar</h3>
+    <ul>
+    <li>Communication and Careers Managements</li>
+    <p>Within this module, it will be enable Computer Science students to build their confident in presenting to crowd of people and writing reports skills. It provides students with a theoretical overview of the discipline and supports them in communicating their learning effectively by choosing appropriate writing and/or speaking styles. The skills they acquire will support them in their studies, future career, as well as in securing a placement. </p>
+    <li>Information Systems</li>
+    <p>This module will cover the role of information within an organisation, the differences between information requirements and processing requirements, and the relationship between processing and data. Students will learn how to construct simple entity-relationship models, how to represent these models as tables in a relational database system, and how to access the data in the tables using SQL.</p>
+    <li>Software Development Principle 2</li>
+    <p>This module aims to develop understanding and confidence in the use of common algorithms and programming constructs to design code and test small scale programs using intermediate level programming techniques.</p>
+    <li>Web Technology</li>
+    <p>This module provides a practical introduction to Internet programming in a variety of commonly used languages. The interaction of the different scripts with the Website will be introduced, together with other relevant aspects of the different languages used. Students will gain practical experience of appropriate program development and Web page design tools, and will be expected to write programs and Web pages conforming to given stylistic guidelines. The module will also introduce students to legislation relevant to web page content.</p>
+  </ul>
+  </div>
+<div id="tabs-2">
+    <h3>First Semestar</h3>
+    <ul>
+    <li>Software Develpoment Group Project Part 1</li>
+    <p>This module features state-of-the-art methods in software engineering practices from a managerial, technical, and process perspective. Students gain their experience of modelbased software development through the software cycle. They participate in a teamwork based on an agile software development methodology.</p>
+    <li>Object Oriented Programming 1</li>
+    <p>This module covers in a practical way the implementation of object-oriented software for typical contemporary software applications.</p>
+    <li>Professional Practice</li>
+    <p>Various aspects of the role of the computer professional are examined, including legal and ethical issues, professionalism in the workplace, the role of professional bodies, and management of computer systems development projects.</p>
+  </ul>
+    <h3>Second Semestar</h3>
+    <ul>
+    <li>Object Oriented Programming 2</li>
+    <p>This module builds on knowledge and skills developed in OOP I (ECSC501) and introduces advanced OOP features and techniques and the necessary knowledge to build a typical enterprise application that use a mix of technology including data and information services, design patterns, and developmental technique.</p>
+    <li>Software Development Principle Part 2</li>
+    <p>This module features state-of-the-art methods in software engineering practices from a managerial, technical, and process perspective. Students gain their experience of modelbased software development through the software cycle. They participate in a teamwork based on an agile software development methodology.</p>
+  </ul>
+    <p>Additionally there are several optional pathways in which Computer Science students have the ability in studying during their second year studies at University of Westminster. Here is the list of the optional pathways:</p>
+    <ul>
+    <li>Gaming and Graphics Development</li>
+    <li>Mobile and Web Computing</li>
+    <li>Multimedia and Creative Computing</li>
+    <li>Software Engineering and Information Systems</li>
+  </ul>
+  </div>
+<div id="tabs-3">
+    <p>BSc Hon Computer Science is also offering their students an opportunity in have the ability to take a 12 month placement in between the second year and final year. This will be able giving the students an once in lifetime opportunity in gaining extremely valuable experience in industrial and this placement will giving the student advance competitive edge within the job market.</p>
+  </div>
+<div id="tabs-4">
+    <h3>First Semestar</h3>
+    <ul>
+    <li>Computer Science and Software Engineering Project Part 1</li>
+    <p>This module requires students to produce an extended piece of work covering a variety of activities related to a single theme. The theme chosen must be appropriate within the Computer Science discipline. This will require the student to combine previously acquired knowledge and techniques with newly researched ideas, the results to be communicated in a report and viva. Students will work independently under the guidance of a supervisor and will be expected to develop the work systematically.</p>
+    <li>Security and Forensics</li>
+    <p>This module examines various aspects of computer security and forensics, including legal, ethical and professional issues, giving a sound introduction to theoretical and practical areas. A substantial amount of work will be laboratory based involving the deployment of security tools, the hardening of operating systems and the analysis of compromised systems.</p>
+  </ul>
+    <h3>Second Semestar</h3>
+    <ul>
+    <li>Computer Science and Software Engineering Project Part 2</li>
+    <p>This module requires students to produce an extended piece of work covering a variety of activities related to a single theme. The theme chosen must be appropriate within the Computer Science discipline. This will require the student to combine previously acquired knowledge and techniques with newly researched ideas, the results to be communicated in a report and viva. Students will work independently under the guidance of a supervisor and will be expected to develop the work systematically.</p>
+  </ul>
+    <p>Additionally there are several optional pathways in which Computer Science students have the ability in studying during their final year studies at University of Westminster. Here is the list of the optional pathways:</p>
+    <ul>
+    <li>Business Information System</li>
+    <li>Gaming and Graphics Development</li>
+    <li>Mobile and Web Computing</li>
+    <li>Multimedia and Creative Computing</li>
+    <li>Software Engineering</li>
+  </ul>
+  </div>
+  </div>
+</article>
+<p></p>
+<p></p>
+<p></p>
+<footer class="gradient">
+    <h4>&copy; 2015 - Design By Shyam Sthankiya</h4>
+  </footer>
+</body>
+</html>
